@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Synthetic Data Generation Guide</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#f7f7f7; padding:40px; line-height:1.6; }
+  .container { max-width:900px; margin:auto; background:white; padding:40px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
+  h1, h2, h3 { color:#2c3e50; }
+  h1 { font-size:32px; margin-bottom:10px; }
+  h2 { margin-top:30px; }
+  p { font-size:16px; }
+  ul { margin-left:20px; }
+  code { background:#eee; padding:3px 6px; border-radius:4px; }
+  .highlight-box {
+      background:#ecf0f1;
+      padding:15px;
+      border-left:5px solid #3498db;
+      border-radius:8px;
+      margin:20px 0;
+  }
+  table { width:100%; border-collapse: collapse; margin:20px 0; }
+  th, td { padding:12px; border:1px solid #ddd; }
+  th { background:#3498db; color:white; }
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>📘 Synthetic Data Generation – Basics (TypeScript + Faker + Fetch)</h1>
+
+<p>
+This guide explains the fundamentals of <strong>synthetic data generation</strong> using TypeScript, Faker,
+and the Fetch API. This is the foundation for using dynamic test data in <strong>API</strong> and <strong>GUI</strong> automation.
+</p>
+
+<div class="highlight-box">
+<b>Why Synthetic Data?</b><br>
+Hardcoded data causes duplicates, reduced coverage, instability, and high maintenance.  
+Synthetic data ensures fresh, realistic, and scalable inputs for every test run.
+</div>
+
+<h2>🚀 What Is Synthetic Data?</h2>
+<p>
+Synthetic data is <strong>artificially generated, realistic test data</strong> that replaces static hardcoded values like:
+</p>
+<ul>
+  <li>"Kiran"</li>
+  <li>"test123"</li>
+  <li>"demo@gmail.com"</li>
+  <li>"9876543210"</li>
+</ul>
+
+<p>
+Instead of repeating fixed values, synthetic data gives fresh, unique inputs every time.
+</p>
+
+<h2>🎯 Why Use Synthetic Data?</h2>
+
+<table>
+<tr>
+  <th>Hardcoded Test Data ❌</th>
+  <th>Synthetic Data ✔</th>
+</tr>
+<tr>
+  <td>Repeated values</td>
+  <td>Fresh values every run</td>
+</tr>
+<tr>
+  <td>Conflicts like "email exists"</td>
+  <td>Guaranteed unique data</td>
+</tr>
+<tr>
+  <td>Low scenario coverage</td>
+  <td>Wide variety of random patterns</td>
+</tr>
+<tr>
+  <td>Manual maintenance</td>
+  <td>Automatically generated</td>
+</tr>
+<tr>
+  <td>Not realistic</td>
+  <td>Name/address/phone look real</td>
+</tr>
+<tr>
+  <td>Poor scalability</td>
+  <td>Generate 1–10000 records easily</td>
+</tr>
+</table>
+
+<h2>🧩 What You Need for Synthetic Data Generation</h2>
+
+<h3>1️⃣ A Data Generator Library</h3>
+<p><strong>@faker-js/faker</strong> generates realistic values such as:</p>
+<ul>
+  <li>Names</li>
+  <li>Emails</li>
+  <li>Phones</li>
+  <li>Addresses</li>
+  <li>Usernames</li>
+  <li>Passwords</li>
+  <li>Dates</li>
+  <li>IDs</li>
+</ul>
+
+<h3>2️⃣ A Runtime Environment</h3>
+<p>Node.js + TypeScript + ts-node</p>
+
+<h3>3️⃣ A Dynamic Data Builder Function</h3>
+<p>A reusable function that produces JSON like:</p>
+
+<div class="highlight-box">
+<pre>{
+  "firstName": "...",
+  "email": "...",
+  "phone": "...",
+  "address": {...}
+}</pre>
+</div>
+
+<h2>🔄 Steps to Generate Synthetic Data (Conceptual)</h2>
+
+<h3>STEP 1 — Install Faker</h3>
+<p>Add a data generation library to your project.</p>
+
+<h3>STEP 2 — Create a Data Generator Function</h3>
+<p>
+Build logic that returns JSONObject with new values each execution.
+This ensures no hardcoded data is used.
+</p>
+
+<h3>STEP 3 — Use Synthetic JSON in Tests</h3>
+
+<h4>✔ API Tests</h4>
+<ul>
+  <li>POST requests</li>
+  <li>PUT requests</li>
+  <li>PATCH updates</li>
+</ul>
+
+<h4>✔ GUI Tests</h4>
+<ul>
+  <li>Fill registration forms</li>
+  <li>Login tests</li>
+  <li>Profile updates</li>
+</ul>
+
+<h3>STEP 4 — Store Generated Data (Optional)</h3>
+<ul>
+  <li>Save JSON to a file</li>
+  <li>Share data across tests</li>
+</ul>
+
+<h3>STEP 5 — Extend the Model</h3>
+<p>Once the basics work, expand your data to model:</p>
+<ul>
+  <li>Orders</li>
+  <li>Products</li>
+  <li>Payments</li>
+  <li>Invoices</li>
+  <li>Banking data</li>
+  <li>Healthcare data</li>
+</ul>
+
+<h2>🧪 How Synthetic Data Helps in Testing</h2>
+<ul>
+  <li>Removes all hardcoded test values</li>
+  <li>Ensures stable CI/CD runs</li>
+  <li>Improves test coverage</li>
+  <li>Supports positive + negative testing</li>
+  <li>Matches real-world data patterns</li>
+</ul>
+
+<h2>📝 Summary</h2>
+<p>
+Synthetic data = <strong>dynamic, realistic JSON</strong> generated at runtime using Faker.
+This avoids hardcoding and provides fresh values for API and GUI testing.
+</p>
+
+<p>
+This guide forms the basic foundation.  
+Later you can extend into a full <strong>Data Factory</strong> with advanced modeling.
+</p>
+
+</div>
+</body>
+</html>
