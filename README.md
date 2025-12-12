@@ -6,7 +6,7 @@
 </p>
 
 
-# 📘 Synthetic Data Generation – Basics (TypeScript + Faker + Fetch)
+
 
 ---
 # 📘 Synthetic Data Generation – Basics (TypeScript + Faker + Fetch)
