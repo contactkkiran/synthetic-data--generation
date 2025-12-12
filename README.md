@@ -158,5 +158,40 @@ Ensure the following are installed on your system:
 	•	Node.js (LTS)
 	•	npm
 
+Faker Installation & Usage with TypeScript
+
+This guide explains how to install and use Faker with TypeScript step by step.
+Faker helps generate synthetic, dynamic, and realistic test data for GUI and API automation.
+
+⸻
+
+faker project set up: 
+
+Faker Installation Steps (TypeScript)
+	1.	Verify Node.js and npm
+node -v
+npm -v
+	2.	Create project directory
+mkdir faker-typescript-project
+cd faker-typescript-project
+	3.	Initialize npm
+npm init -y
+	4.	Install TypeScript
+npm install –save-dev typescript
+	5.	Initialize TypeScript configuration
+npx tsc –init
+
+Recommended tsconfig.json values:
+target: ES2020
+module: CommonJS
+rootDir: src
+outDir: dist
+strict: true
+esModuleInterop: true
+	6.	Install Faker (official package)
+
+
+
+
 Verify installation:
 ---
