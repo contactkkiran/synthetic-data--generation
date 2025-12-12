@@ -1,3 +1,12 @@
+---
+
+<p align="center">
+  <b>Author:</b> <br>
+  <b>Kiran Kanumuri</b> <br>
+  Certified Playwright SME & AI Automation Architect
+</p>
+
+---
 # 📘 Synthetic Data Generation – Basics (TypeScript + Faker + Fetch)
 
 This document explains the **fundamentals of synthetic data generation** for automated testing.  
