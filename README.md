@@ -145,4 +145,18 @@ With TypeScript + Faker + Fetch:
 This README covers the **basic foundation**.  
 In the future, this can be extended into a complete **Test Data Factory** for your project.
 
+Faker Installation & Usage with TypeScript
+
+This guide explains how to install and use Faker with TypeScript step by step.
+Faker helps generate synthetic, dynamic, and realistic test data for GUI and API automation.
+
+⸻
+
+Prerequisites
+
+Ensure the following are installed on your system:
+	•	Node.js (LTS)
+	•	npm
+
+Verify installation:
 ---
